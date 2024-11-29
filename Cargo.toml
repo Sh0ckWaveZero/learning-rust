@@ -1,6 +1,6 @@
 [package]
-name = "learning-rust"
-version = "0.1.0"
-edition = "2021"
+name = "learning-rust"  # ชื่อของ package
+version = "0.1.0" # เวอร์ชันของ package
+edition = "2021" # เวอร์ชันของ Rust ที่ใช้
 
-[dependencies]
+[dependencies] # รายการของ dependencies ที่ใช้ ใน package
