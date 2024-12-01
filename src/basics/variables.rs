@@ -11,6 +11,12 @@ pub fn variables() {
 
     // 2. พื้นฐานประเภทข้อมูล (Data Types)
     println!("\n=== Basic Data Types ===");
+    // สูตรการหาขนาดของข้อมูลใน Rust เช่น i32 คือ 32 bits หรือ 4 bytes 
+    // ส่วน u32 คือ unsigned 32 bits หรือ 4 bytes
+    // ส่วน f64 คือ 64 bits หรือ 8 bytes
+    // ส่วน char คือ 32 bits หรือ 4 bytes
+    // ส่วน bool คือ 1 byte
+    // Range i32 คือ [-2^(n-1), 2^(n-1) - 1] โดย n คือ 32 จะได้ [-2^31, 2^31 - 1] หรือ [-2,147,483,648, 2,147,483,647]
     let integer: i32 = 42;
     let float: f64 = 3.14;
     let boolean: bool = true;
