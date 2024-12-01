@@ -6,16 +6,21 @@
 
 // 1. ใช้คำสั่ง mod เพื่อเรียกใช้งานไฟล์อื่น
 mod basics {
-    pub mod control_flow;
+    // pub mod control_flow;
+    pub mod functions;
     // pub mod variables;
 }
 
 // 2. ใช้คำสั่ง use เพื่อเรียกใช้งานไฟล์อื่น
-use basics::control_flow;
+// use basics::control_flow;
 // use basics::variables;
+use basics::functions;
 
 fn main() {
-    println!("Hello, Crabby! 🦀");
+    // println!("Hello, Crabby! 🦀");
     // variables::variables();
-    control_flow::control_flow();
+    // control_flow::control_flow();
+    let item = "🦀";
+    let result = functions::hello(item);
+    println!("{}", result);
 }
