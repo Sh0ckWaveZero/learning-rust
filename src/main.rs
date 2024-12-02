@@ -13,7 +13,8 @@
 
 mod ownership {
     // pub mod references;
-    pub mod borrowing;
+    // pub mod borrowing;
+    pub mod lifetime;
 }
 
 // 2. ใช้คำสั่ง use เพื่อเรียกใช้งานไฟล์อื่น
@@ -22,7 +23,8 @@ mod ownership {
 // use basics::functions;
 
 // use ownership::references;
-use ownership::borrowing;
+// use ownership::borrowing;
+use ownership::lifetime;
 
 fn main() {
     // println!("Hello, Crabby! 🦀");
@@ -32,5 +34,6 @@ fn main() {
     // let result = functions::hello(item);
     // println!("{}", result);
 
-    borrowing::run();
+    // borrowing::run();
+    lifetime::run();
 }
