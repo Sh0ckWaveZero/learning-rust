@@ -15,7 +15,8 @@ mod ownership {
     // pub mod references;
     // pub mod borrowing;
     // pub mod lifetime;
-    pub mod structs;
+    pub mod enums;
+    // pub mod structs;
 }
 
 // 2. ใช้คำสั่ง use เพื่อเรียกใช้งานไฟล์อื่น
@@ -26,7 +27,8 @@ mod ownership {
 // use ownership::references;
 // use ownership::borrowing;
 // use ownership::lifetime;
-use ownership::structs;
+// use ownership::structs;
+use ownership::enums;
 
 fn main() {
     // println!("Hello, Crabby! 🦀");
@@ -38,5 +40,6 @@ fn main() {
 
     // borrowing::run();
     // lifetime::run();
-    structs::run();
+    // structs::run();
+    enums::run();
 }
