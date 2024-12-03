@@ -76,6 +76,22 @@ where
 ///     }
 /// }
 /// ```
+
+trait Summary {
+    fn summarize(&self) -> String;
+}
+
+struct Article {
+    title: String,
+    content: String,
+}
+
+impl Summary for Article {
+    fn summarize(&self) -> String {
+        format!("{}: {}", self.title, self.content)
+    }
+}
+
 pub fn run() {
     println!("=== TRAITS AND GENERICS ===");
 
@@ -85,4 +101,11 @@ pub fn run() {
     inventory.display();
     let inventory = Inventory { item: 3.14 };
     inventory.display();
+
+    // Trait มีรีเทิร์นเป็น String
+    let article = Article {
+        title: "Hello, Crabby!".to_string(),
+        content: "🦀".to_string(),
+    };
+    println!("{}", article.summarize());
 }
