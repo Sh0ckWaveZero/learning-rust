@@ -21,6 +21,10 @@
 //     pub mod structs;
 // }
 
+mod traits_and_generics {
+    pub mod basic_traits;
+}
+
 // 2. ใช้คำสั่ง use เพื่อเรียกใช้งานไฟล์อื่น
 // use basics::control_flow
 // use basics::variables;
@@ -32,6 +36,8 @@
 // use ownership::structs;
 
 // use structs_basic::structs;
+
+use traits_and_generics::basic_traits;
 
 fn main() {
     // println!("Hello, Crabby! 🦀");
@@ -45,4 +51,5 @@ fn main() {
     // lifetime::run();
 
     // structs::run();
+    basic_traits::run();
 }
