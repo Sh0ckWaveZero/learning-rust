@@ -21,8 +21,12 @@
 //     pub mod structs;
 // }
 
-mod traits_and_generics {
-    pub mod basic_traits;
+// mod traits_and_generics {
+//     pub mod basic_traits;
+// }
+
+mod data_types {
+    pub mod string;
 }
 
 // 2. ใช้คำสั่ง use เพื่อเรียกใช้งานไฟล์อื่น
@@ -37,7 +41,9 @@ mod traits_and_generics {
 
 // use structs_basic::structs;
 
-use traits_and_generics::basic_traits;
+// use traits_and_generics::basic_traits;
+
+use data_types::string;
 
 fn main() {
     // println!("Hello, Crabby! 🦀");
@@ -51,5 +57,7 @@ fn main() {
     // lifetime::run();
 
     // structs::run();
-    basic_traits::run();
+    // basic_traits::run();
+
+    string::run();
 }
