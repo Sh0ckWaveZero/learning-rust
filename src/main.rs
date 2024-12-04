@@ -25,8 +25,12 @@
 //     pub mod basic_traits;
 // }
 
-mod data_types {
-    pub mod string;
+// mod data_types {
+//     pub mod string;
+// }
+
+mod flow {
+    pub mod basic_loop;
 }
 
 // 2. ใช้คำสั่ง use เพื่อเรียกใช้งานไฟล์อื่น
@@ -43,7 +47,9 @@ mod data_types {
 
 // use traits_and_generics::basic_traits;
 
-use data_types::string;
+// use data_types::string;
+
+use flow::basic_loop;
 
 fn main() {
     // println!("Hello, Crabby! 🦀");
@@ -59,5 +65,7 @@ fn main() {
     // structs::run();
     // basic_traits::run();
 
-    string::run();
+    // string::run();
+
+    basic_loop::run();
 }
