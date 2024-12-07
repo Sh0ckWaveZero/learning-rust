@@ -29,8 +29,12 @@
 //     pub mod string;
 // }
 
-mod flow {
-    pub mod basic_loop;
+// mod flow {
+//     pub mod basic_loop;
+// }
+
+mod collections {
+    pub mod vectors;
 }
 
 // 2. ใช้คำสั่ง use เพื่อเรียกใช้งานไฟล์อื่น
@@ -49,7 +53,9 @@ mod flow {
 
 // use data_types::string;
 
-use flow::basic_loop;
+// use flow::basic_loop;
+
+use collections::vectors;
 
 fn main() {
     // println!("Hello, Crabby! 🦀");
@@ -67,5 +73,5 @@ fn main() {
 
     // string::run();
 
-    basic_loop::run();
+    vectors::run();
 }
