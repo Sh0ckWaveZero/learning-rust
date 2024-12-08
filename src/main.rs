@@ -33,14 +33,15 @@
 //     pub mod basic_loop;
 // }
 
-// mod collections {
-//     pub mod vectors;
-// }
-
-mod iterators_and_closures {
-    pub mod iterators;
-    pub mod closures;
+mod collections {
+    // pub mod vectors;
+    pub mod hashmap;
 }
+
+// mod iterators_and_closures {
+//     pub mod iterators;
+//     pub mod closures;
+// }
 
 // 2. ใช้คำสั่ง use เพื่อเรียกใช้งานไฟล์อื่น
 // use basics::control_flow
@@ -61,9 +62,10 @@ mod iterators_and_closures {
 // use flow::basic_loop;
 
 // use collections::vectors;
+use collections::hashmap;
 
-use iterators_and_closures::iterators;
-use iterators_and_closures::closures;
+// use iterators_and_closures::iterators;
+// use iterators_and_closures::closures;
 
 fn main() {
     // println!("Hello, Crabby! 🦀");
@@ -83,6 +85,8 @@ fn main() {
 
     // vectors::run();
 
-    iterators::run();
-    closures::run();
+    // iterators::run();
+    // closures::run();
+
+    hashmap::run();
 }
