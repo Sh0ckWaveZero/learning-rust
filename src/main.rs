@@ -33,9 +33,14 @@
 //     pub mod basic_loop;
 // }
 
-mod collections {
-    // pub mod vectors;
-    pub mod hashmap;
+// mod collections {
+// pub mod vectors;
+// pub mod hashmap;
+// }
+
+mod error_handling {
+    pub mod result;
+    pub mod option;
 }
 
 // mod iterators_and_closures {
@@ -62,10 +67,13 @@ mod collections {
 // use flow::basic_loop;
 
 // use collections::vectors;
-use collections::hashmap;
+// use collections::hashmap;
 
 // use iterators_and_closures::iterators;
 // use iterators_and_closures::closures;
+
+use error_handling::result;
+use error_handling::option;
 
 fn main() {
     // println!("Hello, Crabby! 🦀");
@@ -88,5 +96,8 @@ fn main() {
     // iterators::run();
     // closures::run();
 
-    hashmap::run();
+    // hashmap::run();
+
+    result::run();
+    option::run();
 }
